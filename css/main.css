@@ -1,0 +1,484 @@
+/* reset   */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* ========== BODY GENERAL ========== */
+
+/* Definimos el header la alineación de texto y la margen ionferior*/
+header.header {
+  text-align: center;
+  margin-bottom: 10px;
+  /*nuevo codigo*/
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 0;
+  background-color: #080707;
+}
+
+/* logo */
+header.header img.logo {
+  max-width: 90px;
+  display: flex;
+  margin: 0 auto 10px;
+}
+/* El cuerpo principal */
+body{
+    background-color: #070708;
+    /* definimos tipos de fuente */
+    font-family: calibri, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    margin: 20px;
+    color: whitesmoke;
+}
+
+body header h1{
+    color: whitesmoke;
+    display: flex;               /* permite alinear elementos en línea */
+    align-items: center;         /* centra verticalmente */
+    justify-content: center;     /* centra horizontalmente */
+    font-size: large;
+    padding: 20px;
+}
+body header h1 span{
+    color: whitesmoke;
+    background-color: rgba(63, 146, 46, 0.842);
+    padding: 0 4px;
+    border-radius: 3px;
+    font-size: large;
+}
+
+/* Estilos generales */
+body header nav ul{
+    list-style: none;
+}
+
+body header nav ul li{
+    text-align: left;
+    text-decoration: none;
+}
+body main h2, p{
+    text-align: center;
+    font-weight: bold;
+}
+body main h1 nav ul li{
+    list-style: none;
+    text-decoration: none;
+}
+body main section{
+    background-color: #070708;
+    color: whitesmoke;
+}
+
+/* Estilos básicos para imágenes*/
+body main section h1 p img {
+    width: 170px; /* La imagen ocupa todo el ancho de su contenedor (.item) */
+    height: 170px;
+    display: flex; /* Elimina el espacio extra debajo de las imágenes */
+    margin-bottom: 50px; /* Pequeño espacio entre imagen y párrafo */
+}
+section ol li{
+    text-align: left;
+}
+
+/* aquí trabajamos las imágines dentro de los botones */
+body main section div img{
+    display: flex;
+    height: 48px;  /* alto de los botones */
+    width: 48px;   /* ancho de los botones */
+    border-radius: 5px;  
+    flex-direction: row;
+    background-color: #444642;
+    align-items: center;        /* centra verticalmente */
+    margin-right: 10%;          /* separación de los iconos y el texto */
+}
+body main section div a img{
+    text-decoration: none;   /* quita la línea del enlace */
+    display: inline-block;   /* mantiene la imagen como bloque sin afectar texto */
+}
+
+section{
+    padding: 1.5rem; /* espacios uniformes en todos los lados */
+    text-align: center; 
+    display: flex;
+    flex-direction: column;  
+    gap: 0.5rem;  /* separación entre las tarjetas*/
+}
+/* trabajando en los botones de menú */
+.card-section a{
+    text-decoration: none;   /* quita la línea del enlace */
+    display: inline-block;   /* mantiene la imagen como bloque sin afectar texto */
+    color: whitesmoke;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-section img {
+    width: 60px;
+    height: 60px;
+    filter: brightness(0) invert(1); /* color blanco a los íconos */
+    background-color: transparent;   /* sin fondo */
+    padding: 0.4rem;                 /* espacio del borde */
+    display:flex;
+    justify-content: center ;
+}
+.card-section a:hover img {
+  transform: scale(1.05);  /* pequeño zoom al pasar el mouse */
+}
+section .card-section{
+    background-color: #1F1F23;
+    border: 0.03rem solid #424246;
+    padding: 0.1rem;
+    border-radius: 20px;
+}
+/* contenedor del botón */
+.contenedor-boton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* trabaja,mos el contenedor del botó Ir a Votar*/
+main .contenedor-boton .boton{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    padding: 1%;
+    font-weight: bold;
+    background-color: #fa7b04; /* definimos el color de fondo del botón*/
+    gap: 1rem;
+}
+
+/* 1. Contenedor Principal (Flexbox) */
+.logo{
+    width: 64px;
+    height: 64px;
+}
+.header{
+    background-color: #080707;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+}
+.section-uno .area-uno{
+    grid-area: area-uno;
+}
+
+.section-uno .area-dos{
+    grid-area: area-dos;
+}
+
+.section-uno .area-tres{
+    grid-area: area-tres;
+}
+
+.section-uno .area-cuatro{
+    grid-area: area-cuatro;
+}
+
+.navbar{
+  background-color: #1f1f23 !important;
+  border-bottom: 1px solid #2f2f35;
+  text-align: center;
+}
+.navbar-nav{
+text-align: center;
+background-color: #1f1f23 !important;
+border-bottom: 1px solid #2f2f35;
+}
+/* Marca */
+.navbar-brand{
+  color: #fa7b04 !important;
+  font-weight: 600;
+}
+
+/* Enlaces del menú */
+.nav-link{
+  color: #f5f5f5 !important;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover,
+.dropdown-item:hover{
+  color: #fa7b04 !important;
+}
+
+/* Dropdown */
+.dropdown-menu{
+  background-color: #1f1f23;
+  border: none;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-item{
+  color: #f5f5f5;
+}
+/* === PDF === */
+.pdf-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 20px auto;
+}
+/* aquí trabajamos con las propuestas de los candidatos*/
+main div{
+    display: flex;
+    background-color: #070708;
+    color: whitesmoke;
+    justify-content: center;
+}
+.galeria {
+    display: block; 
+    gap: 20px; 
+    padding: 20px;
+    justify-content: center; 
+}
+.item {
+ 
+    flex: 1 1 300px; 
+    border: 1px solid #ccc; 
+    padding: 15px;
+    box-sizing: border-box;
+}
+.item p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.item img {
+    display: inline-block;
+    width: 90px;
+    height: 196px;
+    align-content: center;
+}
+object {
+    width: 100%;
+    height: 480px;
+    top: 0;
+    left: 0;
+}
+/* ================================================================================================ */
+/* mq Desktop */
+@media screen and (min-width: 1024px){
+    /* Aquí quedan definidos los botones de menú*/
+    .section-uno{
+        background-color: #070708;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 3rem 5%;
+    }
+
+/* se colocan los botones de menú horizontalmente */
+
+header.header img.logo {
+    width: 128px;
+    height: 128px;
+    display: flex;
+    margin: 0 auto 10px;
+}
+.header{
+    background-color: #080707;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+}
+body header h1{
+    color: whitesmoke;
+    display: flex;            /* permite alinear elementos en línea */
+    align-items: center;      /* centra verticalmente */
+    justify-content: center;  /* centra horizontalmente */
+    font-size: x-large;
+    padding: 20px;
+}
+
+body header h1 span{
+    color: whitesmoke;
+    background-color: rgba(63, 146, 46, 0.842);
+    padding: 0 4px;
+    border-radius: 3px;
+    font-size: x-large;
+}
+/* trabajamos los botones de menú */
+section{
+    display: flex;
+    padding: 1rem; /* espacios uniformes en todos los lados uniforme en todos los lados */
+    text-align: center; 
+    flex-direction: row;
+    gap: 1.3rem;
+}
+/* section .card-section{
+    display: flex;
+    height: 10rem;
+    width: 10rem;
+    background-color: #1F1F23;
+    border: 0.03rem solid #424246;
+    padding: 1rem;
+    border-radius:20px;
+} */
+/* configuración del botón ir a votar*/
+main .contenedor-boton .boton{
+    display: flex;
+    width: 15%;
+    border-radius: 100px;
+    padding: 1%;
+    font-weight: bold;
+    background-color: #fa7b04; /* definimos el color de fondo del botón*/
+    gap: 1rem;
+}
+body main section div a img{
+    text-decoration: none;   /* quita la línea del enlace */
+    display: inline-block;   /* mantiene la imagen como bloque sin afectar texto */
+    align-content: center;
+    align-items: center;
+}
+
+/* ajustamos los íconos de los botones*/
+body main section div a h3{
+    padding: 1rem;
+    font-size: 20px;
+    text-align: center;
+}
+/* aquí trabajamos las imágines dentro de los botones */
+body main section div img{
+    display: flex;
+    height: 50px;  /* alto de los botones */
+    width: 50px;   /* ancho de los botones */
+    border-radius: 5px;  
+    flex-direction: row;
+    background-color: #424246;
+    align-items: center;  /* centra verticalmente */
+    margin-right: 10%;    /* separación de los iconos y el texto */
+}
+/* trabajando con el texto dentro de los botones de menú*/
+.card-section {
+    display: flex;
+    flex-direction: column;     /* ícono arriba, texto abajo */
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f23;  /* gris oscuro de las tarjetas */
+    border: 1px solid #424246;  /* sombra gris más claro en las tarjetas */
+    border-radius: 1rem;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+}
+/* === ICONOS === */
+.card-section img {
+    width: 60px;
+    height: 60px;
+    filter: brightness(0) invert(1); /* color blanco a los íconos */
+    background-color: transparent;   /* sin fondo */
+    padding: 0.4rem;                 /* espacio del borde */
+    display: block;
+}
+.card-section a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+.card-section:hover {
+    transform: scale(1.05); /* hacemos un sutil zoom al pasar el mouse sobre el botón*/
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15); /* aplicamos una sombra al botón */
+}
+/* textos de los íconos */
+.card-section h3 {
+    color: whitesmoke;
+    font-size: 0.95rem; /* definimos un tamaño para la fuente */
+    font-weight: 600;   /* definimos un semi-resaltado a la fuente para destacar el texto */
+    margin: 0;
+}
+/* ===========================================================================================*/
+.navbar .dropdown:hover .dropdown-menu {
+display: block;
+}
+
+/* Icono hamburguesa */
+.navbar-toggler {
+  border-color: rgb(255, 255, 255);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* === Dropdown === */
+.dropdown-menu {
+  background-color: #1c1c1f;
+  border: none;
+}
+
+.dropdown-item {
+  color: white !important;
+}
+
+.dropdown-item:hover {
+  background-color: #070708 !important;
+  color: #ffe600 !important;
+}
+
+/* === PDF === */
+.pdf-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+object {
+  width: 100%;
+  height: 600px;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  color: #555;
+}
+
+/* img {
+    width: 170; 
+    height: 170;
+    display: block; 
+    margin-bottom: 10px;
+} */
+
+/* aqui trabajamos con las propuestas de los candidatos*/
+.galeria {
+    display: flex; 
+    gap: 20px; 
+    padding: 20px;
+    justify-content: center; 
+}
+.item {
+    flex: 1 1 300px; 
+    border: 1px solid #ccc; 
+    padding: 15px;
+    box-sizing: border-box;
+}
+.item p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.4;
+}
+.item img {
+    display: flex;
+    width: 128px;
+    height: 196px;
+    align-content: left;
+}
