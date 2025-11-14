@@ -9,8 +9,6 @@ box-sizing: border-box;
 /* Definimos el header la alineación de texto y la margen ionferior*/
 header.header {
   text-align: center;
-  margin-bottom: 10px;
-  /*nuevo codigo*/
   display: flex;
   gap: 0.5rem;
   padding: 1rem 0;
@@ -262,6 +260,20 @@ object {
     left: 0;
 }
 /* ================================================================================================ */
+/* mq Tablet */
+@media screen and (min-width: 768px){
+    /* Aquí quedan definidos los botones de menú*/
+    .section-uno{
+        background-color: #070708;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        padding: 3rem 5%;
+    }
+}
+    
 /* mq Desktop */
 @media screen and (min-width: 1024px){
     /* Aquí quedan definidos los botones de menú*/
@@ -323,17 +335,28 @@ section{
     border: 0.03rem solid #424246;
     padding: 1rem;
     border-radius:20px;
-} */
+}   */
+
+.contenedor-boton{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
 /* configuración del botón ir a votar*/
 main .contenedor-boton .boton{
     display: flex;
     width: 15%;
+    align-items: center;
+    justify-content: center;
     border-radius: 100px;
-    padding: 1%;
+    padding: 0.5rem;
     font-weight: bold;
     background-color: #fa7b04; /* definimos el color de fondo del botón*/
     gap: 1rem;
 }
+
 body main section div a img{
     text-decoration: none;   /* quita la línea del enlace */
     display: inline-block;   /* mantiene la imagen como bloque sin afectar texto */
@@ -430,6 +453,7 @@ display: block;
 .dropdown-item:hover {
   background-color: #070708 !important;
   color: #ffe600 !important;
+;
 }
 
 /* === PDF === */
@@ -481,4 +505,5 @@ footer {
     width: 128px;
     height: 196px;
     align-content: left;
+}
 }

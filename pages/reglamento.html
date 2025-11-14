@@ -60,21 +60,49 @@
         </nav>
 
   <!-- CONTENIDO PRINCIPAL -->
-  <div class="pdf-container">
-    <object data="../documentos/Cartilla-Elecciones-Gobierno-Escolar.pdf" type="application/pdf">
-      <p>El navegador no puede mostrar este archivo PDF. Puede descargarlo 
-        <a href="../documentos/Cartilla-Elecciones-Gobierno-Escolar.pdf">aquí</a>.
-      </p>
+
+    <div class="pdf-container">
+    <object 
+        id="visor-pdf"
+        data="../documentos/Cartilla-Elecciones-Gobierno-Escolar.pdf"
+        type="application/pdf"
+        width="100%"
+        height="600px">
+        <p>El navegador no puede mostrar este archivo PDF. Puede descargarlo 
+            <a href="../documentos/Cartilla-Elecciones-Gobierno-Escolar.pdf">aquí</a>.
+        </p>
     </object>
-  </div>
+    </div>
+
 
   <!-- FOOTER -->
   <footer>
     <p>&copy; Todos los derechos reservados</p>
   </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+        const visor = document.getElementById('visor-pdf');
+        if (!visor) return; // Si no existe el visor, salimos
+
+        // Verificamos si hay un hash del tipo #pdf=5
+        const match = window.location.hash.match(/#pdf=(\d+)/);
+        if (match) {
+        const pageNum = match[1];
+        // Reemplazamos el atributo data del object
+        visor.setAttribute(
+            'data',
+            `../documentos/Cartilla-Elecciones-Gobierno-Escolar.pdf#page=${pageNum}`
+        );
+        }
+    });
+    </script>
+
+</body>
+</html>
 
 </body>
 </html>
