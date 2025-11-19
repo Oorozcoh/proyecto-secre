@@ -1,12 +1,3 @@
-@charset "UTF-8";
-/* ==========================================================
-   VARIABLES
-   Colores y configuraciones reutilizables en todo el proyecto.
-========================================================== */
-/* ==========================================================
-   MIXINS
-   Reglas reutilizables para evitar repetición.
-========================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -44,19 +35,11 @@ html, body, section {
   gap: 1rem;
 }
 
-/* ================================================
-   TABLET — min-width 768px
-   El botón pasa a ocupar 15%
-================================================ */
 @media (min-width: 768px) {
   .contenedor-boton .boton {
     width: 15%;
   }
 }
-/* ================================================
-   DESKTOP — min-width 1024px
-   Mantiene el 15% de ancho
-================================================ */
 @media (min-width: 1024px) {
   .contenedor-boton .boton {
     width: 15%;
@@ -208,10 +191,6 @@ header.header .logo {
     font-size: 1.6rem;
   }
 }
-/* ==========================================================
-   MAIN
-   Títulos y texto centralizado dentro del contenido principal.
-========================================================== */
 main h2,
 main p {
   text-align: center;
@@ -232,10 +211,6 @@ main .card-section a:hover img {
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
 }
 
-/* ==========================================================
-   SECTION (Mobile First)
-   Mobile → botones apilados verticalmente.
-========================================================== */
 section {
   background-color: #070708;
   color: whitesmoke;
@@ -254,10 +229,6 @@ section div img {
   margin-right: 10%;
 }
 
-/* ==========================================================
-   TABLET — min-width: 768px
-   2 columnas × 2 filas (grilla)
-========================================================== */
 @media (min-width: 768px) {
   section.section-uno {
     display: grid;
@@ -269,10 +240,6 @@ section div img {
     align-items: center;
   }
 }
-/* ==========================================================
-   DESKTOP — min-width: 1024px
-   4 botones en una sola línea
-========================================================== */
 @media (min-width: 1024px) {
   section.section-uno {
     display: grid;
@@ -281,7 +248,6 @@ section div img {
     gap: 1.8rem;
     padding: 2rem 5%;
   }
-  /* Ajustar iconos para Desktop */
   section.section-uno div img {
     height: 50px;
     width: 50px;
@@ -297,10 +263,6 @@ footer {
   padding: 1.5rem 0;
 }
 
-/* ==========================================================
-   PDF PAGE
-   Contenedor para el visor PDF embebido.
-========================================================== */
 .pdf-container {
   width: 100%;
   max-width: 100%;
@@ -350,15 +312,7 @@ object {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
   }
 }
-/* ==========================================================
-   MEDIA QUERY — DESKTOP
-   4 botones en una sola línea
-========================================================== */
 @media (min-width: 1024px) {
-  /* ---------------------------------------------
-     Contenedor general de botones (section)
-     → Distribución en fila
-  --------------------------------------------- */
   section {
     display: flex;
     flex-direction: row;
@@ -366,10 +320,6 @@ object {
     gap: 2rem;
     padding: 2rem;
   }
-  /* ---------------------------------------------
-     Botones (card-section)
-     4 en una sola línea
-     --------------------------------------------- */
   .card-section {
     background-color: #1F1F23;
     border: 1px solid #424246;

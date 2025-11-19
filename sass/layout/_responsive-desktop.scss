@@ -1,14 +1,14 @@
-/* ==========================================================
-   MEDIA QUERY — DESKTOP
-   4 botones en una sola línea
-========================================================== */
+// ==========================================================
+//   MEDIA QUERY — DESKTOP
+//   4 botones en una sola línea
+// ==========================================================
 
 @media (min-width: 1024px) {
 
-  /* ---------------------------------------------
-     Contenedor general de botones (section)
-     → Distribución en fila
-  --------------------------------------------- */
+  // ---------------------------------------------
+  //   Contenedor general de botones (section)
+  //   → Distribución en fila
+  // ---------------------------------------------
   section {
     display: flex;
     flex-direction: row;
@@ -17,10 +17,10 @@
     padding: 2rem;
   }
 
-  /* ---------------------------------------------
-     Botones (card-section)
-     4 en una sola línea
-     --------------------------------------------- */
+  // ---------------------------------------------
+  //   Botones (card-section)
+  //   4 en una sola línea
+  // ---------------------------------------------
   .card-section {
     @include card-style;
     width: 11rem;
