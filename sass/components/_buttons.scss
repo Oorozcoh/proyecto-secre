@@ -1,0 +1,39 @@
+// ==========================================================
+//   BUTTONS
+//   Botones de acción principal.
+// ==========================================================
+
+.contenedor-boton {
+  @include center-flex;
+
+  .boton {
+    width: 30%;
+    @include center-flex;
+    background-color: $color-primary;  // color naranja para el fondo del botón
+    padding: 1%;
+    border-radius: 100px;
+    font-weight: bold;
+    gap: 1rem;
+  }
+}
+/* ================================================
+   TABLET — min-width 768px
+   El botón pasa a ocupar 15%
+================================================ */
+
+@media (min-width: 768px) {
+  .contenedor-boton .boton {
+    width: 15%;
+  }
+}
+
+/* ================================================
+   DESKTOP — min-width 1024px
+   Mantiene el 15% de ancho
+================================================ */
+
+@media (min-width: 1024px) {
+  .contenedor-boton .boton {
+    width: 15%;
+  }
+}

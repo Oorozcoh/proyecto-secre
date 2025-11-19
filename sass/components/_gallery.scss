@@ -1,0 +1,39 @@
+// ==========================================================
+//   GALLERY
+//   Contenedor de propuestas de candidatos.
+// ==========================================================
+
+.galeria {
+  display: block;
+  padding: 20px;
+  gap: 20px;
+  justify-content: center;
+
+  .item {
+    border: 1px solid #ccc;
+    padding: 15px;
+
+    p {
+      text-align: center;
+    }
+
+    img {
+      width: 90px;
+      height: 196px;
+    }
+  }
+}
+
+// ----------------------------------------------------------
+//   RESPONSIVE — Desktop
+// ----------------------------------------------------------
+@media (min-width: 1024px) {
+  .galeria {
+    display: flex;
+
+    .item img {
+      width: 128px;
+      height: 196px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+/* ==========================================================
+   MIXINS
+   Reglas reutilizables para evitar repetición.
+========================================================== */
+
+// Centrado flexible (horizontal + vertical)
+@mixin center-flex {
+  background-color: $color-bg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Estilo base para tarjetas
+@mixin card-style {
+  background-color: $color-card;
+  border: 1px solid $color-border;
+  border-radius: 1rem;
+}

@@ -1,0 +1,25 @@
+// ==========================================================
+//   MEDIA QUERY — TABLET (≥768px)
+//   Distribución de botones en cuadrícula 2 × 2
+// ==========================================================
+
+@media (min-width: 768px) {
+
+  .section-uno {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas:
+      "area-uno area-dos"
+      "area-tres area-cuatro";
+  }
+
+  section {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .card-section a:hover img {
+    transform: scale(1.2);  // pequeño zoom al pasar el mouse */
+    box-shadow: 0 0 15px rgba(255,255,255,0.15);
+  }
+}

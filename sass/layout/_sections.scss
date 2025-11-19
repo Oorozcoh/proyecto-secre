@@ -1,0 +1,63 @@
+/* ==========================================================
+   SECTION (Mobile First)
+   Mobile → botones apilados verticalmente.
+========================================================== */
+
+section {
+  background-color: $color-bg;     // Fondo uniforme
+  color: $color-text;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;          // Móvil = apilado
+  gap: 0.8rem;
+  text-align: center;
+
+  /* Iconos de los botones */
+  div img {
+    height: 48px;
+    width: 48px;
+    border-radius: 5px;
+    background-color: #444642;
+    margin-right: 10%;
+  }
+}
+
+/* ==========================================================
+   TABLET — min-width: 768px
+   2 columnas × 2 filas (grilla)
+========================================================== */
+
+@media (min-width: 768px) {
+  section.section-uno {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);   // 2 columnas
+    grid-template-rows: auto auto;           // 2 filas
+    gap: 2rem;
+    padding: 3rem 5%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* ==========================================================
+   DESKTOP — min-width: 1024px
+   4 botones en una sola línea
+========================================================== */
+
+@media (min-width: 1024px) {
+  section.section-uno {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);   // 4 columnas → 1 línea
+    grid-template-rows: 1fr;
+    gap: 1.8rem;
+    padding: 2rem 5%;
+  }
+
+  /* Ajustar iconos para Desktop */
+  section.section-uno div img {
+    height: 50px;
+    width: 50px;
+    margin-right: 8%;
+  }
+}
+

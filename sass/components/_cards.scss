@@ -1,0 +1,32 @@
+// ==========================================================
+//   CARDS
+//   Botones con íconos y acciones destacadas.
+// ==========================================================
+.card-section {
+  @include card-style;          // background-color: $color-card
+  padding: 1rem;
+  border-radius: 1rem;
+  align-content: center;
+
+  a {
+    display: flex;
+    flex-direction: column;     // ICONO ARRIBA
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    text-decoration: none;
+    color: $color-text;
+  }
+
+  img {
+    width: 60px;
+    height: 60px;
+    filter: brightness(0) invert(1);
+    background-color: transparent; // Le colocamos el fondo del mismo color de la tarjeta
+    padding: 0.4rem;
+    border-radius: 0.6rem;
+  }
+}
+
+
+

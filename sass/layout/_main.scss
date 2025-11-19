@@ -1,0 +1,27 @@
+/* ==========================================================
+   MAIN
+   Títulos y texto centralizado dentro del contenido principal.
+========================================================== */
+
+main {
+  h2,
+  p {
+    text-align: center;
+    font-weight: bold;
+    background-color: $color-bg;
+    color: whitesmoke;
+    margin-bottom: 0 !important;
+    padding: 1rem;
+  }
+
+  img{
+    width: 48px;
+    height: 48px;
+    border-radius: 1rem;
+    background-color: transparent;
+  }
+  .card-section a:hover img {
+    transform: scale(1.2);  // pequeño zoom al pasar el mouse */
+    box-shadow: 0 0 5px rgba(255,255,255,0.15);
+  }
+}

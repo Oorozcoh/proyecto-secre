@@ -1,0 +1,13 @@
+// ==========================================================
+//   FOOTER
+//   Pie de página simple y centrado.
+// ==========================================================
+
+footer {
+  background-color: $color-bg;
+  text-align: center;
+  margin-top: 20px;
+  color: $color-text;
+  margin: 0 !important;
+  padding: 1.5rem 0;
+}

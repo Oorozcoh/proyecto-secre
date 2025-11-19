@@ -1,0 +1,22 @@
+// ==========================================================
+//   BOOTSTRAP OVERRIDES
+//   Personalización del comportamiento del menú desplegable.
+// ==========================================================
+
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  background-color: #1c1c1f;
+  border: none;
+}
+
+.dropdown-item {
+  color: white !important;
+
+  &:hover {
+    background-color: $color-bg !important;
+    color: #ffe600 !important;
+  }
+}

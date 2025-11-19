@@ -1,0 +1,24 @@
+// ==========================================================
+//   NAVBAR
+//   Ajustes visuales para la barra de navegación Bootstrap.
+// ==========================================================
+
+.navbar {
+  background-color: $color-card !important;
+  border-bottom: 1px solid #2f2f35;
+  text-align: center;
+
+  .navbar-brand {
+    color: $color-primary !important;
+    font-weight: 600;
+  }
+
+  .nav-link {
+    color: $color-text !important;
+    transition: 0.2s;
+
+    &:hover {
+      color: $color-primary !important;
+    }
+  }
+}

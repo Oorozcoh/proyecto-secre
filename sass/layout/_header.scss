@@ -1,0 +1,68 @@
+// ==========================================================
+// HEADER
+// Contiene el logotipo y los títulos principales.
+// ==========================================================
+
+.header,
+.header-wrapper {
+  background-color: $color-bg;
+  @include center-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center; // permite que el grupo del título quede en el centro
+  flex-direction: row;
+  padding: 1rem 0;
+  position: relative;
+}
+// --- LOGO alineado a la izquierda --- 
+header.header .logo {
+  width: 110px;
+  height: auto;
+  display: block;
+  margin-right: auto;  // lo empuja hacia la izquierda
+}
+// Título principal centrado (una línea)
+.header h1{
+  margin: 0;
+  padding: 0;
+  font-size: 1.25rem;
+  color: $color-text;
+  line-height: 1.1;
+  text-align: center;
+}
+.header div div {
+  color: $color-text;
+  text-align: center;
+}
+.header div div span{
+  margin-top: 0.35rem;
+  font-weight: 700;
+  color: $color-text;
+  font-size: 0.95rem;
+  background-color: rgba(63, 146, 46, 0.842);
+  padding: 0 6px;
+  border-radius: 4px;
+}
+
+// Media Query Tablet
+@media (min-width: 768px) {
+  .header .title-group h1 { font-size: 2.3rem;
+  text-align: center;
+  font-weight: bold; }
+  .header div { font-size: 2.5rem; 
+  color: $color-text;
+  text-align: center;}
+  .header .title-group span { font-size: 2.5rem; }
+}
+
+// Media Query Desktop
+@media (min-width: 1024px) {
+  .header .title-group h1 { font-size: 1.6rem;
+  text-align: center; 
+  justify-content: center;}
+
+  .header .title-group div { font-size: 1.6rem; 
+  color: $color-text;
+  text-align: center;}
+  .header .title-group span { font-size: 1.6rem; }
+}

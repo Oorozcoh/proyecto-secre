@@ -1,0 +1,28 @@
+// ==========================================================
+//   STYLE.SCSS
+//   Archivo raíz que importa todos los módulos del proyecto.
+// ==========================================================
+
+@import "utilities/variables";        // Variables globales
+@import "utilities/mixin";           // Mixins reutilizables
+
+@import "base/reset";                 // Reset de estilos base
+@import "base/tipografia";            // Tipografías globales
+@import "base/global";                // Estilos generales predeterminados
+
+@import "components/buttons";         // Componentes: botones
+@import "components/cards";           // Componentes: tarjetas interactivas
+@import "components/navbar";          // Componentes: barra de navegación
+@import "components/gallery";         // Componentes: galería de candidatos
+
+@import "layout/header";              // Layout: cabecera
+@import "layout/main";                // Layout: elementos principales
+@import "layout/sections";            // Layout: secciones distribuidas
+@import "layout/footer";              // Layout: pie de página
+
+@import "pages/pdf";                  // Página: visor PDF
+
+@import "vendors/bootstrap-overrides"; // Ajustes de Bootstrap
+
+@import "layout/responsive-tablet";    // Ajustes responsivos para tablet
+@import "layout/responsive-desktop";   // Ajustes responsivos para DeskTop
