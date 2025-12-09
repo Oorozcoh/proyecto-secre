@@ -13,13 +13,25 @@
       "area-uno area-dos"
       "area-tres area-cuatro";
   }
+  
+  h1 {
+    text-align: center;
+  }
 
   section {
     flex-direction: row;
     gap: 2rem;
   }
-  .card-section a:hover img {
-    transform: scale(1.2);  // pequeño zoom al pasar el mouse */
-    box-shadow: 0 0 15px rgba(255,255,255,0.15);
+
+  main {
+  h2,
+    p {
+      text-align: center;
+      background-color: $color-bg;
+      color: whitesmoke;
+      margin-bottom: 0 !important;
+      padding: 1rem;
+    }
   }
+
 }

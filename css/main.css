@@ -23,26 +23,33 @@ html, body, section {
   align-items: center;
 }
 .contenedor-boton .boton {
-  width: 30%;
   background-color: #070708;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 30%;
   background-color: #fa7b04;
-  padding: 1%;
+  padding: 10PX 20PX;
   border-radius: 100px;
   font-weight: bold;
   gap: 1rem;
+  border: 3px solid whitesmoke;
+  font-size: 16px;
+  cursor: pointer;
+}
+.contenedor-boton a {
+  color: whitesmoke;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
   .contenedor-boton .boton {
-    width: 15%;
+    width: 30%;
   }
 }
 @media (min-width: 1024px) {
   .contenedor-boton .boton {
-    width: 15%;
+    width: 10%;
   }
 }
 .card-section {
@@ -95,18 +102,33 @@ html, body, section {
   justify-content: center;
 }
 .galeria .item {
-  border: 1px solid #ccc;
+  border: 1px solid #777575;
   padding: 15px;
+  width: 100%;
 }
 .galeria .item p {
   text-align: center;
 }
 .galeria .item img {
-  width: 90px;
-  height: 196px;
+  width: 20%;
+  height: 20%;
 }
 
+@media (min-width: 768px) {
+  .galeria {
+    display: flex;
+  }
+  .galeria .item img {
+    width: 128px;
+    height: 196px;
+    justify-items: center;
+  }
+}
 @media (min-width: 1024px) {
+  main div h3 {
+    text-align: center;
+    color: whitesmoke;
+  }
   .galeria {
     display: flex;
   }
@@ -134,13 +156,22 @@ header.header .logo {
   width: 110px;
   height: auto;
   display: block;
-  margin-right: auto;
+  margin-right: 5rem;
 }
 
 .header h1 {
   margin: 0;
   padding: 0;
   font-size: 1.25rem;
+  color: whitesmoke;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.header h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
   color: whitesmoke;
   line-height: 1.1;
   text-align: center;
@@ -153,11 +184,12 @@ header.header .logo {
 
 .header div div span {
   margin-top: 0.35rem;
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 1.5rem;
   color: whitesmoke;
   font-size: 0.95rem;
   background-color: rgba(63, 146, 46, 0.842);
-  padding: 0 6px;
+  padding: 0 2px;
   border-radius: 4px;
 }
 
@@ -175,6 +207,19 @@ header.header .logo {
   .header .title-group span {
     font-size: 2.5rem;
   }
+  .header h2 {
+    font-size: 2.5rem;
+  }
+  .header div div span {
+    margin-top: 0.35rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    font-size: 0.95rem;
+    background-color: rgba(63, 146, 46, 0.842);
+    padding: 0 6px;
+    border-radius: 4px;
+  }
 }
 @media (min-width: 1024px) {
   .header .title-group h1 {
@@ -190,9 +235,23 @@ header.header .logo {
   .header .title-group span {
     font-size: 1.6rem;
   }
+  .header h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.8rem;
+    color: whitesmoke;
+    line-height: 1.1;
+    text-align: center;
+  }
 }
-main h2,
-main p {
+main h4 {
+  text-align: center;
+  background-color: #070708;
+  color: whitesmoke;
+  margin-bottom: 0 !important;
+  padding: 1rem;
+}
+main h2 {
   text-align: center;
   font-weight: bold;
   background-color: #070708;
@@ -200,11 +259,21 @@ main p {
   margin-bottom: 0 !important;
   padding: 1rem;
 }
-main img {
-  width: 48px;
-  height: 48px;
+main section div div img {
+  width: 96px;
+  height: 96px;
   border-radius: 1rem;
   background-color: transparent;
+  display: block;
+  margin: 0 auto;
+}
+main section h4 img {
+  width: 96px;
+  height: 96px;
+  border-radius: 1rem;
+  background-color: transparent;
+  display: block;
+  margin: 0 auto;
 }
 main .card-section a:hover img {
   transform: scale(1.2);
@@ -218,14 +287,14 @@ section {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  text-align: center;
+  text-align: left;
   /* Iconos de los botones */
 }
 section div img {
   height: 48px;
   width: 48px;
   border-radius: 5px;
-  background-color: #444642;
+  background-color: #464642;
   margin-right: 10%;
 }
 
@@ -238,6 +307,14 @@ section div img {
     padding: 3rem 5%;
     justify-content: center;
     align-items: center;
+  }
+  /* Iconos de los botones */
+  div img {
+    height: 48px;
+    width: 48px;
+    border-radius: 5px;
+    background-color: #464642;
+    margin-right: 10%;
   }
 }
 @media (min-width: 1024px) {
@@ -254,13 +331,44 @@ section div img {
     margin-right: 8%;
   }
 }
-footer {
-  background-color: #070708;
+.site-footer {
+  background: #1F1F23;
+  color: #e5e7eb;
+  padding: 2rem 1rem;
   text-align: center;
-  margin-top: 20px;
-  color: whitesmoke;
-  margin: 0 !important;
-  padding: 1.5rem 0;
+}
+.site-footer .footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.site-footer .social {
+  display: flex;
+  gap: 1rem;
+}
+.site-footer .social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.site-footer .social__link:hover {
+  background: linear-gradient(135deg, #a4afec, #474747);
+  transform: translateY(-2px);
+}
+.site-footer .social__icon {
+  width: 24px;
+  height: 24px;
+  fill: #e5e7eb;
+  transition: fill 0.3s ease;
+}
+.social__link:hover .site-footer .social__icon {
+  fill: #fff;
 }
 
 .pdf-container {
@@ -303,13 +411,20 @@ object {
     grid-template-columns: repeat(2, auto);
     grid-template-areas: "area-uno area-dos" "area-tres area-cuatro";
   }
+  h1 {
+    text-align: center;
+  }
   section {
     flex-direction: row;
     gap: 2rem;
   }
-  .card-section a:hover img {
-    transform: scale(1.2);
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
+  main h2,
+  main p {
+    text-align: center;
+    background-color: #070708;
+    color: whitesmoke;
+    margin-bottom: 0 !important;
+    padding: 1rem;
   }
 }
 @media (min-width: 1024px) {
@@ -331,7 +446,6 @@ object {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   .card-section img {
     width: 60px;
@@ -344,6 +458,7 @@ object {
     font-size: 1rem;
     color: whitesmoke;
     font-weight: 600;
+    text-align: center;
   }
   .card-section .boton {
     background-color: rgb(62, 11, 202);

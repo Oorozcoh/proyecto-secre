@@ -5,35 +5,45 @@
 
 .contenedor-boton {
   @include center-flex;
-
+  
   .boton {
-    width: 30%;
     @include center-flex;
+    width: 30%;
     background-color: $color-primary;  // color naranja para el fondo del botón
-    padding: 1%;
+    padding: 10PX 20PX;
     border-radius: 100px;
     font-weight: bold;
     gap: 1rem;
+    border: 3px solid $color-text;
+    font-size: 16px;
+    cursor: pointer;
+
   }
+
+  a {
+    color: $color-text;
+    text-decoration: none;
+  }
+
 }
 // ================================================
 //   TABLET — min-width 768px
-//   El botón pasa a ocupar 15%
+//   El botón pasa a ocupar 30%
 // ================================================
 
 @media (min-width: 768px) {
   .contenedor-boton .boton {
-    width: 15%;
+    width: 30%;
   }
 }
 
 // ================================================
 //   DESKTOP — min-width 1024px
-//   Mantiene el 15% de ancho
-// ================================================
-
+//   Mantiene el 10% de ancho
+// ================================================ 
+ 
 @media (min-width: 1024px) {
   .contenedor-boton .boton {
-    width: 15%;
+    width: 10%;
   }
 }

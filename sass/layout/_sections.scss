@@ -10,14 +10,14 @@ section {
   display: flex;
   flex-direction: column;          // Móvil = apilado
   gap: 0.8rem;
-  text-align: center;
+  text-align: left;
 
   /* Iconos de los botones */
   div img {
     height: 48px;
     width: 48px;
     border-radius: 5px;
-    background-color: #444642;
+    background-color: #464642;
     margin-right: 10%;
   }
 }
@@ -36,6 +36,14 @@ section {
     padding: 3rem 5%;
     justify-content: center;
     align-items: center;
+  }
+    /* Iconos de los botones */
+  div img {
+    height: 48px;
+    width: 48px;
+    border-radius: 5px;
+    background-color: #464642;
+    margin-right:10%;
   }
 }
 

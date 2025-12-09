@@ -10,24 +10,49 @@
   justify-content: center;
 
   .item {
-    border: 1px solid #ccc;
+    border: 1px solid #777575;
     padding: 15px;
+    width:100%;
+    
 
     p {
       text-align: center;
     }
 
     img {
-      width: 90px;
-      height: 196px;
+      width: 20%;
+      height: 20%;
     }
   }
 }
+
+
+// ----------------------------------------------------------
+//   RESPONSIVE — Tablet
+// ----------------------------------------------------------
+@media (min-width: 768px) {
+  .galeria {
+    display: flex;
+
+    .item img {
+      width: 128px;
+      height: 196px;
+      justify-items: center;
+    }
+  }
+}
+
+
 
 // ----------------------------------------------------------
 //   RESPONSIVE — Desktop
 // ----------------------------------------------------------
 @media (min-width: 1024px) {
+  main div h3{
+    text-align: center;
+    color: $color-text;
+
+  }
   .galeria {
     display: flex;
 

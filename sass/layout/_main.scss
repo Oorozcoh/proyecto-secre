@@ -4,8 +4,15 @@
 // ==========================================================
 
 main {
-  h2,
-  p {
+  h4{
+    text-align: center;
+    background-color: $color-bg;
+    color: whitesmoke;
+    margin-bottom: 0 !important;
+    padding: 1rem;
+  }
+
+    h2 {
     text-align: center;
     font-weight: bold;
     background-color: $color-bg;
@@ -14,14 +21,29 @@ main {
     padding: 1rem;
   }
 
-  img{
-    width: 48px;
-    height: 48px;
+  section div div img{
+    width: 96px;
+    height: 96px;
     border-radius: 1rem;
     background-color: transparent;
+    display: block;
+    margin: 0 auto;
   }
+
+  section h4 img{
+    width: 96px;
+    height: 96px;
+    border-radius: 1rem;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto;
+  }
+
   .card-section a:hover img {
     transform: scale(1.2);  // pequeño zoom al pasar el mouse */
     box-shadow: 0 0 5px rgba(255,255,255,0.15);
   }
+
+
+  
 }
