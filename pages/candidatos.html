@@ -26,44 +26,62 @@
         <!-- MENÚ DE NAVEGACIÓN -->
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid d-flex flex-column align-items-center">
-            <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse justify-content-center" id="menuNav">
-                <ul class="navbar-nav text-center">
-                <li class="nav-item">
-                    <a class="nav-link active" href="../index.html">Inicio</a>
-                </li>
+                <div class="collapse navbar-collapse justify-content-center" id="menuNav">
+                    <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">Inicio</a>
+                    </li>
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="../pages/reglamento.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Reglamento Electoral
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark text-left">
-                        <li><a class="dropdown-item" href="../pages/reglamento.html#page=5">Para los candidatos</a></li>
-                        <li><a class="dropdown-item" href="../pages/reglamento.html#page=10">Para los votantes</a></li>
-                        <li><a class="dropdown-item" href="../pages/reglamento.html#page=29">Para los jurados</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../pages/reglamento.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Reglamento Electoral
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark text-left">
+                            <li><a class="dropdown-item" href="../pages/reglamento.html#page=5">Para los candidatos</a></li>
+                            <li><a class="dropdown-item" href="../pages/reglamento.html#page=10">Para los votantes</a></li>
+                            <li><a class="dropdown-item" href="../pages/reglamento.html#page=29">Para los jurados</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="alert('Aún no hay resultados')">Resultados</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" >Calendario Electoral</a>
+                    </li>
                     </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="alert('Aún no hay resultados')">Resultados</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#" >Calendario Electoral</a>
-                </li>
-                </ul>
-            </div>
+                </div>
             </div>
         </nav>
         
         <!-- Contenido principal -->
         <main>
-            <div>
-                <h2>Propuestas de los Candidatos</h2>
-            </div>
+            <section class="container my-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                    <h2 class="h4">Simulador Electoral SECRE</h2>
+                    <p>
+                    Este simulador permite gestionar el proceso de votación de forma segura y organizada. 
+                    Para votar, haz clic directamente sobre la <strong>fotografía</strong> de tu candidato preferido. 
+                    El sistema validará tu identidad para asegurar un único voto por persona y procesará los resultados 
+                    de forma interna.
+                    </p>
+                    <p class="text-muted small">
+                        * Nota: Los resultados finales solo pueden ser consultados por el jurado electoral 
+                        mediante la clave de seguridad al finalizar la jornada.
+                    </p>
+                </div>
+        </div>
+    </section>
+
+    <div>
+        <h2 class="text-center my-4">Propuestas de los Candidatos</h2>
+    </div>
                 
             <section>
 

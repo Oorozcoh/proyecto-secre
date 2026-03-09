@@ -1,71 +1,82 @@
 /**
  * SIMULADOR ELECTORAL SECRE - COLEGIO REGGIO EMILIA
-  */
+ * Desarrollo: Validación de Votante Único y Seguridad de Jurado
+ */
 
-// 1. Aquí defino las Constantes y Variables de Control
+// 1. Constantes y Arrays (Estructura de datos)
 const CANDIDATOS = ["Laura Martínez", "Sofía Herrera", "Diego Ramírez"];
 const VOTOS = [0, 0, 0]; 
 const VOTANTES_REGISTRADOS = []; // Array para control de duplicados
-const CLAVE_JURADO = "1234"; // Contraseña para ver resultados
+const CLAVE_JURADO = "1234"; 
 let totalVotos = 0;
 
+// --- FUNCIONES DEL SIMULADOR ---
+
 /**
- * Función: votarPorCandidato
- * Cuando ingresa a la página candidatos.html se activa al hacer clic en las fotos en candidatos.html
+ * FUNCIÓN 1: Validar si el usuario ya votó (Procesamiento)
+ * Retorna true si ya existe en el array, false si es nuevo.
+ */
+function verificarIdentidad(documento) {
+    // Buscamos el documento en el array de registrados
+    if (VOTANTES_REGISTRADOS.includes(documento)) {
+        return true; // Ya votó
+    }
+    return false; // No ha votado
+}
+
+/**
+ * FUNCIÓN 2: Registrar el voto (Entrada y Procesamiento)
+ * Se invoca al hacer clic en las imágenes de candidatos.html
  */
 function votarPorCandidato(indice) {
-    // Entrada: Captura de documento y normalización (mayúsculas) para evitar errores
-    let documento = prompt("Has elegido a " + CANDIDATOS[indice] + ".\nIngresa tu documento para validar:").trim().toUpperCase();
+    let documento = prompt("Ingresa tu documento para validar tu identidad:").trim().toUpperCase();
 
-    // Validación: Campo vacío
+    // Validación de entrada básica
     if (!documento) {
-        alert("❌ Error: Debe ingresar un documento válido.");
+        alert("❌ Error: Debe ingresar un documento para votar.");
         return;
     }
 
-    // Validación: Votante duplicado
-    if (VOTANTES_REGISTRADOS.includes(documento)) {
-        alert("🚫 ACCESO DENEGADO: El sistema registra que el documento " + documento + " ya ha votado.");
-        return;
-    }
+    // LLAMADA A FUNCIÓN DE VALIDACIÓN (Función 1)
+    let yaVoto = verificarIdentidad(documento);
 
-    // Procesamiento: Confirmación del voto
-    let confirmar = confirm("¿" + documento + ", confirmas tu voto por " + CANDIDATOS[indice] + "?");
-
-    if (confirmar) {
-        VOTOS[indice]++; // Suma el voto al array
-        VOTANTES_REGISTRADOS.push(documento); // Registra al votante
-        totalVotos++;
-        alert("✅ ¡Voto registrado exitosamente!");
-        console.log("Votación: " + documento + " votó por " + CANDIDATOS[indice]);
+    if (yaVoto) {
+        alert("🚫 ACCESO DENEGADO: " + documento + ", ya has registrado un voto.");
+        console.warn("Intento de duplicidad: " + documento);
+    } else {
+        let confirmar = confirm("¿Confirmas tu voto por " + CANDIDATOS[indice] + "?");
+        
+        if (confirmar) {
+            // Procesamiento de datos
+            VOTOS[indice]++; 
+            VOTANTES_REGISTRADOS.push(documento); 
+            totalVotos++;
+            alert("✅ ¡Voto registrado exitosamente!");
+        }
     }
 }
 
 /**
- * Función: finalizarVotacion (Se requiere la clave del jurado para acceder a los resultados)
- * si la clave no coincide, se muestra un mensaje de error y no se permite ver los resultados. 
- * Si la clave es correcta, se muestra un resumen final de los votos por cada candidato y el 
- * total de votantes registrados.
+ * FUNCIÓN 3: Escrutinio Final (Salida de resultados)
+ * Protegida por contraseña para el jurado electoral.
  */
 function finalizarVotacion() {
-    let password = prompt("🔐 Acceso restringido. Ingrese la clave del jurado para ver el escrutinio:");
+    let password = prompt("🔐 Ingrese la clave del jurado para ver los resultados:");
 
     if (password === CLAVE_JURADO) {
         if (totalVotos === 0) {
-            alert("No hay votos registrados en la urna virtual.");
+            alert("Aún no hay votos en la urna.");
             return;
         }
 
-        // Salida de datos: Resumen final
         let resumen = "--- RESULTADOS FINALES ---\n";
         for (let i = 0; i < CANDIDATOS.length; i++) {
-            resumen += CANDIDATOS[i] + ": " + VOTOS[i] + " votos.\n";
+            resumen += `${CANDIDATOS[i]}: ${VOTOS[i]} votos.\n`;
         }
         
-        alert(resumen + "\nTotal de votantes: " + totalVotos);
-        console.log("Escrutinio completo:", VOTOS);
+        alert(resumen + "\nTotal votantes: " + totalVotos);
         console.log("Lista oficial de votantes:", VOTANTES_REGISTRADOS);
     } else {
-        alert("❌ Clave incorrecta. Solo el jurado puede cerrar la votación.");
+        alert("❌ Clave incorrecta.");
     }
 }
