@@ -69,36 +69,47 @@
 
                    <div class="galeria">
                     <div class="item">
-                        <div>
-                        <img src="../img/candidato1.png" alt="">
+                        <div class="contenedor-foto">
+                            <img src="../img/candidato1.png" alt="Laura Martínez" 
+                                onclick="votarPorCandidato(0)" style="cursor: pointer;">
                         </div>
-                        <p>Más participación, más voz</p>
-                        <p>Laura Martínez para Representante Estudiantil</p>
-                        <p>Tu voz, tu poder, tu colegio</p>
-                        <p>Como representante, mi objetivo es que cada estudiante tenga voz en las decisiones del colegio.
+                            <p>Laura Martínez</p>
+                            <p><strong>"Más participación, más voz"</strong></p>
+                            <p>Tu voz, tu poder, tu colegio</p>
+                            <p>Como representante, mi objetivo es que cada estudiante tenga voz en las decisiones del colegio.
                             Propongo asambleas estudiantiles, presupuesto participativo y comunicación directa.</p>
                     </div>
 
                     <div class="item">
-                        <img src="../img/candidato2.png" alt="">
-                        <p>Innovación y Bienestar</p>
-                        <p>Sofía Herrera para Representante Estudiantil</p>
-                        <p>Innovación que inspira, bienestar que une</p>
+                        <div class="contenedor-foto">
+                            <img src="../img/candidato2.png" alt="Sofía Herrera" 
+                                onclick="votarPorCandidato(1)" style="cursor: pointer;">
+                        </div>
+                            <p>Sofía Herrera</p>
+                            <p><strong>"Innovación y Bienestar"</strong></p>
+                            <p>Innovación que inspira, bienestar que une</p>
                         <p> Mi compromiso es construir un colegio donde cada estudiante se sienta escuchado, apoyado y
                             motivado para alcanzar su máximo potencial. Propongo talleres de bienestar emocional, tecnología
                             para aprender mejor y actividades inclusivas.</p>
                     </div>
 
                     <div class="item">
-                        <img src="../img/candidato3.png" alt="">
-                        <p>Cultura y sostenibilidad</p>
-                        <p>Diego Ramírez para Representante Estudiantil</p>
+                        <div class="contenedor-foto">
+                            <img src="../img/candidato3.png" alt="Diego Ramírez" 
+                                onclick="votarPorCandidato(2)" style="cursor: pointer;">
+                        </div>
+                        <p>Diego Ramírez</p>
+                        <p><strong>"Cultura y Sostenibilidad"</strong></p>
                         <p>Cultura que nos une, sostenibilidad que nos define</p>
                         <p>Creo en un colegio que celebre nuestra diversidad y cuide el planeta. Propongo semana cultural,
                             proyecto verde y voluntariado estudiantil.</p>
                     </div>
                 </div>
             </section>
+
+            <div class="text-center my-5">
+                <button class="btn btn-dark" onclick="finalizarVotacion()">Finalizar y ver Resultados</button>
+            </div>
             
          <!-- FOOTER -->
         <footer class="site-footer">
@@ -125,5 +136,6 @@
         
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../js/main.js"></script>
     </body>
 </html>
