@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+main{
+  background-color: #070708;
+  color: whitesmoke;
+}
+
 body {
   font-family: calibri, Georgia, Times, serif, sans-serif;
 }
@@ -14,6 +19,10 @@ html, body, section {
   padding: 0;
   min-height: 100%;
   width: 100%;
+}
+main{
+  background-color: #070708;
+  color: whitesmoke;
 }
 
 .contenedor-boton {
@@ -47,9 +56,14 @@ html, body, section {
     width: 30%;
   }
 }
+
 @media (min-width: 1024px) {
   .contenedor-boton .boton {
-    width: 10%;
+    width: 10%;  main{
+    background-color: #070708;
+    color: whitesmoke;
+  }
+
   }
 }
 .card-section {
@@ -125,6 +139,7 @@ html, body, section {
   }
 }
 @media (min-width: 1024px) {
+
   main div h3 {
     text-align: center;
     color: whitesmoke;
@@ -257,7 +272,7 @@ main h2 {
   background-color: #070708;
   color: whitesmoke;
   margin-bottom: 0 !important;
-  padding: 1rem;
+  padding: rem;
 }
 main section div div img {
   width: 96px;
@@ -341,11 +356,11 @@ section div img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1px;
 }
 .site-footer .social {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 .site-footer .social__link {
   display: flex;
@@ -448,8 +463,8 @@ object {
     align-items: center;
   }
   .card-section img {
-    width: 60px;
-    height: 60px;
+    width: 60;
+    height: 60;
     object-fit: contain;
     filter: brightness(0) invert(1);
   }
@@ -469,4 +484,49 @@ object {
   }
 }
 
-/*# sourceMappingURL=main.css.map */
+/* Clase para usar dinámicamente con JS */
+.img-ajustada {
+    height: 250px;       /* Altura fija para que todas las fotos alineen igual */
+    object-fit: contain; /* Mantiene la proporción sin estirar la imagen */
+    padding: 15px;
+    background-color: #fcfcfc;
+    border-radius: 8px;
+}
+
+.card-seleccionada {
+    border: 3px solid #0d6efd !important; /* Azul de Bootstrap */
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2);
+    transform: scale(1.03);
+    transition: all 0.3s ease;
+    background-color: #fffff8;
+}
+
+/* Estilo para que las tarjetas parezcan cliqueables */
+.card-candidato:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+/* 1. Contenedor de la tarjeta: Asegura un ancho base */
+.card-candidato {
+    width: 250px;            /* Ancho fijo para que todas las tarjetas tengan el mismo tamaño */
+    margin: 0 auto;
+}
+
+/* 2. La Imagen: Aquí está la magia */
+.card-img-top {
+    width: 100%;      /* La imagen ocupará todo el ancho de la tarjeta */
+    height: 200px;    /* DEFINE UNA ALTURA FIJA (Ajusta según tu diseño) */
+    object-fit: contain; /* 'contain' muestra TODA la imagen, con espacios si es necesario */
+    background-color: #f8f9fa; /* Un gris muy claro si 'contain' deja huecos */
+    object-position: center;
+}
+
+.btn-votar {
+    white-space: nowrap;      /* Evita que el texto se divida en dos líneas */
+    font-size: 0.9rem;        /* Reduce un poco el tamaño para asegurar que quepa */
+    padding: 10px 5px;        /* Ajusta el padding lateral */
+    width: 100%;              /* Asegura que ocupe el ancho disponible */
+    overflow: hidden;         /* Por seguridad, oculta desbordamientos */
+    text-overflow: ellipsis;  /* Si el nombre fuera muy largo, pone puntos suspensivos */
+}
