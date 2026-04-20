@@ -4,17 +4,17 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Candidatos</title>
-        <!-- link de css -->
-        <link rel="stylesheet" href="../css/main.css">
-
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- link de css -->
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="js/main.js" defer></script>
     </head>
     <body>
         <!-- banner principal -->
         <header class="header">
             <a href="../index.html">
-            <img src="../img/LogoRE.svg" alt="Logo del Colegio Reggio Emilia" class="logo Reggio Emilia"></a>
+            <img src="../assets/icons/LogoRE.svg" alt="Logo del Colegio Reggio Emilia" class="logo Reggio Emilia"></a>
             <div class="title-group">
                 <h1>Sistema Electoral Colegio Reggio Emilia</h1>
                 <div>
@@ -48,11 +48,11 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#" onclick="alert('Aún no hay resultados')">Resultados</a>
+                        <a class="nav-link" href="#" onclick="alert('Aún ...no hay resultados')">Resultados</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#" >Calendario Electoral</a>
+                        <a class="nav-link" href="../pages/calendario.html">Calendario Electoral</a>
                     </li>
                     </ul>
                 </div>
@@ -63,55 +63,24 @@
         <main class="container my-5">
             <h2 class="text-center mb-4">Sistema de Votación Digital SECRE</h2>
 
-            <section class="Registro"id="seccion-registro">
+            <section class="Registro" id="seccion-registro">
                 <div>
                     <h5>1. Identificación del Estudiante (Votante)</h5>
                     <div>
-                        <label id="label-nombreVotante" for="nombreVotante" class="form-label">Nombre Completo:</label>
+                        <label id="label-nombreVotante" for="nombreVotante" class="form-label">Documento de Identidad:</label>
                         <input type="text" id="nombreVotante" class="form-control" placeholder="Ej: Eliana Restrepo">
-
                     </div>
                     <div id="mensaje-validacion" class="small"></div>
                 </div>
           </section>
 
             <section class="container my-5">
-                <div class="row justify-content-center g-4"> <div class="col-md-4">
-                        <div class="card h-100 card-candidato text-center p-3 shadow-sm" data-id="0">
-                            <img src="../img/1034993293.jpeg" class="card-img-top img-ajustada" alt="Isabela Gómez">
-                            <div class="card-body">
-                                <h5 class="card-title">Isabela Gómez</h5>
-                                <button class="btn btn-primary btn-votar w-100" data-id="0">Votar por Isabela</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card h-100 card-candidato text-center p-3 shadow-sm" data-id="1">
-                            <img src="../img/1034993739.jpeg" class="card-img-top img-ajustada" alt="Salomé Zapata">
-                            <div class="card-body">
-                                <h5 class="card-title">Salomé Zapata</h5>
-                                <button class="btn btn-primary btn-votar w-100" data-id="1">Votar por Salomé</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card h-100 card-candidato text-center p-3 shadow-sm" data-id="2">
-                            <img src="../img/1034996487.jpeg" class="card-img-top img-ajustada" alt="Matías Noreña">
-                            <div class="card-body">
-                                <h5 class="card-title">Matías Noreña</h5>
-                                <button class="btn btn-primary btn-votar w-100" data-id="2">Votar por Matías</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+                 <div class="row justify-content-center g-4"></div>
             </section>
 
             <section class="mt-5 border-top pt-4">
                 <div class="d-flex justify-content-center align-items-center mt-4">
-                    <button id="btn-maestro" class="btn btn-danger">Cerrar Urna (Jurado)</button>
+                    <button id="btn-maestro" class="btn btn-danger">Consultar resultados (Jurado)</button>
                 </div>
                 <div id="zona-clave" class="d-none mt-3 p-3 border rounded bg-dark text-white text-center">
                     <h6>🔐 Ingrese contraseña</h6>

@@ -4,6 +4,60 @@
   box-sizing: border-box;
 }
 
+header.header .logo {
+  width: 98px;
+  height: auto;
+  display: block;
+  margin-right: 5rem;
+}
+
+.header,
+.header-wrapper {
+  display: flex;
+  background-color: #070708;
+  color: rgb(245, 245, 245);
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.header .title-group h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+  .header .title-group span {
+    font-size: 1.8rem;
+  }
+
+.header div div {
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.header div div span {
+margin-top: 0.35rem;
+font-weight: 500;
+text-align: center;
+color: whitesmoke;
+font-size: 0.85rem;
+background-color: rgba(63, 146, 46, 0.842);
+padding: 0 6px;
+border-radius: 4px;
+}
+
+section.section-uno {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-rows: auto auto; */
+  gap: 2rem;
+  padding: 3rem 5%;
+  justify-content: center;
+  align-items: center;
+}
+
 main{
   background-color: #070708;
   color: whitesmoke;
@@ -31,6 +85,7 @@ main{
   justify-content: center;
   align-items: center;
 }
+
 .contenedor-boton .boton {
   background-color: #070708;
   display: flex;
@@ -46,26 +101,23 @@ main{
   font-size: 16px;
   cursor: pointer;
 }
+
 .contenedor-boton a {
   color: whitesmoke;
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
-  .contenedor-boton .boton {
-    width: 30%;
-  }
+section div img {
+  display: grid;
+  height: 64px;
+  width: 64px;
+  padding: 0.5rem;
+  align-content: center;
+  border-radius: 5px;
+  background-color: #3d3d39;
+  margin-right: 10%;
 }
 
-@media (min-width: 1024px) {
-  .contenedor-boton .boton {
-    width: 10%;  main{
-    background-color: #070708;
-    color: whitesmoke;
-  }
-
-  }
-}
 .card-section {
   background-color: #1F1F23;
   border: 1px solid #424246;
@@ -74,8 +126,225 @@ main{
   border-radius: 1rem;
   align-content: center;
 }
-.card-section a {
+
+main .card-section a:hover img {
+  transform: scale(1.2);
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
+}
+
+section {
   display: flex;
+  background-color: #070708;
+  color: whitesmoke;
+  padding: 1.5rem;
+  flex-direction: column;
+  gap: 0.8rem;
+  text-align: left;
+  /* Iconos de los botones */
+}
+
+.card-section a h3{ 
+  color: whitesmoke;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+}
+section div h4 {
+  display:block !important;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: #070708;
+  color: whitesmoke;
+  margin-bottom: 0 !important;
+  padding: 1rem;
+}
+
+.card-section a img { 
+    display: block;  
+    margin: auto;   /* Con display: block y margin: auto, obligo al navegador a repartir el espacio a los lados por igual*/
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    background-color: transparent;
+    filter: brightness(0) invert(1);
+  }
+
+/* Estilo del Texto Neón */
+.neon-text {
+    color: #fff;
+    font-family: 'Orbitron', sans-serif; /* Fuente recomendada para este estilo */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* El texto "¡SE PROTAGONISTA!", se muestra parpadeante y en tonos cyan Neón*/
+.highlight {
+    color: #00f2ff; /* Cian Neón */
+    text-shadow: 0 0 5px #00f2ff, 
+                 0 0 15px #00f2ff, 
+                 0 0 30px #00f2ff;
+    animation: flicker 2s infinite alternate;
+}
+
+/* Imagen con efecto de marco tecnológico */
+.megafono-neon {
+    width: 350px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #13fe1f;
+    padding: 5px;
+    box-shadow: 0 0 10px #2efe13;
+}
+
+/* Animación de parpadeo (Flicker) */
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: 0 0 5px #00f2ff, 0 0 15px #00f2ff, 0 0 30px #00f2ff;
+    }
+    20%, 24%, 55% {       
+        text-shadow: none;
+        color: #004a4d;
+    }
+  }
+
+.site-footer {
+  background: #1F1F23;
+  color: #e5e7eb;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.site-footer .footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1px;
+}
+
+.site-footer .social {
+  display: flex;  
+  margin: auto;
+  align-items: center;
+  gap: 0.5rem;
+}
+ 
+footer div svg{
+  display: flex;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+  align-content: center;
+ }
+
+/* ********************************************************************************************************************************** */
+@media (min-width: 768px) {
+
+  .galeria {
+    display: flex;
+  }
+
+  .galeria .item img {
+    width: 128px;
+    height: 196px;
+    justify-items: center;
+  }
+
+  .contenedor-boton .boton {
+    width: 30%;
+  }
+
+  .header .title-group h1 {
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .header div {
+    font-size: 2.5rem;
+    color: whitesmoke;
+    text-align: center;
+  }
+
+  .header .title-group span {
+    font-size: 2.5rem;
+  }
+
+  .header h2 {
+    font-size: 2.5rem;
+  }
+  
+  .header div div span {
+    margin-top: 0.35rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    font-size: 0.95rem;
+    background-color: rgba(63, 146, 46, 0.842);
+    padding: 0 6px;
+    border-radius: 4px;
+  }
+
+  section.section-uno {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    padding: 3rem 5%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Iconos de los botones */
+  div img {
+    height: 48px;
+    width: 48px;
+    border-radius: 5px;
+    background-color: #464642;
+    margin-right: 10%;
+  }
+
+.section-uno {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "area-uno area-dos" "area-tres area-cuatro";
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  section {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  main h2,
+  main p {
+    text-align: center;
+    background-color: #070807;
+    color: whitesmoke;
+    margin-bottom: 0 !important;
+    padding: 1rem;
+  }
+}
+
+/**************************************************************************************************************************************/
+@media (min-width: 1024px) {
+  .contenedor-boton .boton {
+    width: 10%;  
+  } 
+  
+  main{
+    background-color: #070708;
+    color: whitesmoke;
+  }
+
+.card-section a {
+  display: block;
+  margin: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -83,6 +352,7 @@ main{
   text-decoration: none;
   color: whitesmoke;
 }
+
 .card-section img {
   width: 60px;
   height: 60px;
@@ -97,14 +367,17 @@ main{
   border-bottom: 1px solid #2f2f35;
   text-align: center;
 }
+
 .navbar .navbar-brand {
   color: #fa7b04 !important;
   font-weight: 600;
 }
+
 .navbar .nav-link {
   color: whitesmoke !important;
   transition: 0.2s;
 }
+
 .navbar .nav-link:hover {
   color: #fa7b04 !important;
 }
@@ -120,41 +393,32 @@ main{
   padding: 15px;
   width: 100%;
 }
+
 .galeria .item p {
   text-align: center;
 }
+
 .galeria .item img {
   width: 20%;
   height: 20%;
 }
 
-@media (min-width: 768px) {
-  .galeria {
-    display: flex;
-  }
-  .galeria .item img {
-    width: 128px;
-    height: 196px;
-    justify-items: center;
-  }
-}
-@media (min-width: 1024px) {
-
   main div h3 {
     text-align: center;
     color: whitesmoke;
   }
+
   .galeria {
     display: flex;
   }
+  
   .galeria .item img {
     width: 128px;
     height: 196px;
   }
-}
+  
 .header,
 .header-wrapper {
-  background-color: #070708;
   background-color: #070708;
   display: flex;
   justify-content: center;
@@ -197,6 +461,7 @@ header.header .logo {
   text-align: center;
 }
 
+
 .header div div span {
   margin-top: 0.35rem;
   font-weight: bold;
@@ -208,48 +473,22 @@ header.header .logo {
   border-radius: 4px;
 }
 
-@media (min-width: 768px) {
-  .header .title-group h1 {
-    font-size: 2.3rem;
-    text-align: center;
-    font-weight: bold;
-  }
-  .header div {
-    font-size: 2.5rem;
-    color: whitesmoke;
-    text-align: center;
-  }
-  .header .title-group span {
-    font-size: 2.5rem;
-  }
-  .header h2 {
-    font-size: 2.5rem;
-  }
-  .header div div span {
-    margin-top: 0.35rem;
-    font-weight: 700;
-    font-size: 2.5rem;
-    color: whitesmoke;
-    font-size: 0.95rem;
-    background-color: rgba(63, 146, 46, 0.842);
-    padding: 0 6px;
-    border-radius: 4px;
-  }
-}
-@media (min-width: 1024px) {
-  .header .title-group h1 {
+.header .title-group h1 {
     font-size: 1.6rem;
     text-align: center;
     justify-content: center;
   }
+
   .header .title-group div {
     font-size: 1.6rem;
     color: whitesmoke;
     text-align: center;
   }
+
   .header .title-group span {
     font-size: 1.6rem;
   }
+
   .header h2 {
     margin: 0;
     padding: 0;
@@ -258,38 +497,42 @@ header.header .logo {
     line-height: 1.1;
     text-align: center;
   }
-}
+
 main h4 {
   text-align: center;
   background-color: #070708;
   color: whitesmoke;
   margin-bottom: 0 !important;
-  padding: 1rem;
+  padding: 0.5rem;
 }
+
 main h2 {
   text-align: center;
   font-weight: bold;
   background-color: #070708;
   color: whitesmoke;
-  margin-bottom: 0 !important;
-  padding: rem;
+  margin-bottom:  0 !important;
+  padding: 0.5rem;
+  margin: 0;
 }
+
 main section div div img {
+  display: block;
   width: 96px;
   height: 96px;
   border-radius: 1rem;
   background-color: transparent;
+}
+
+main section img {
   display: block;
   margin: 0 auto;
-}
-main section h4 img {
-  width: 96px;
-  height: 96px;
-  border-radius: 1rem;
   background-color: transparent;
-  display: block;
-  margin: 0 auto;
+  height: 256px;
+  border-radius: 1rem;
+
 }
+
 main .card-section a:hover img {
   transform: scale(1.2);
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.15);
@@ -305,6 +548,7 @@ section {
   text-align: left;
   /* Iconos de los botones */
 }
+
 section div img {
   height: 48px;
   width: 48px;
@@ -313,31 +557,11 @@ section div img {
   margin-right: 10%;
 }
 
-@media (min-width: 768px) {
-  section.section-uno {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    gap: 2rem;
-    padding: 3rem 5%;
-    justify-content: center;
-    align-items: center;
-  }
-  /* Iconos de los botones */
-  div img {
-    height: 48px;
-    width: 48px;
-    border-radius: 5px;
-    background-color: #464642;
-    margin-right: 10%;
-  }
-}
-@media (min-width: 1024px) {
-  section.section-uno {
-    display: grid;
+section.section-uno {
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr;
-    gap: 1.8rem;
+    gap: 0.5rem;
     padding: 2rem 5%;
   }
   section.section-uno div img {
@@ -345,8 +569,20 @@ section div img {
     width: 50px;
     margin-right: 8%;
   }
-}
-.site-footer {
+section.section-uno {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0.5rem;
+    padding: 2rem 5%;
+  }
+  section.section-uno div img {
+    height: 50px;
+    width: 50px;
+    margin-right: 8%;
+  }
+
+  .site-footer {
   background: #1F1F23;
   color: #e5e7eb;
   padding: 2rem 1rem;
@@ -370,7 +606,8 @@ section div img {
   height: 48px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.06);
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition: background 0.
+  3s ease, transform 0.3s ease;
 }
 .site-footer .social__link:hover {
   background: linear-gradient(135deg, #a4afec, #474747);
@@ -396,11 +633,10 @@ object {
   width: 100%;
   height: 480px;
 }
-@media (min-width: 1024px) {
-  object {
+
+object {
     height: 600px;
   }
-}
 
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
@@ -419,55 +655,43 @@ object {
   color: #ffe600 !important;
 }
 
-@media (min-width: 768px) {
-  .section-uno {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(2, auto);
-    grid-template-areas: "area-uno area-dos" "area-tres area-cuatro";
-  }
-  h1 {
-    text-align: center;
-  }
-  section {
-    flex-direction: row;
-    gap: 2rem;
-  }
-  main h2,
-  main p {
-    text-align: center;
-    background-color: #070708;
-    color: whitesmoke;
-    margin-bottom: 0 !important;
-    padding: 1rem;
-  }
-}
-@media (min-width: 1024px) {
-  section {
+section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
   }
+  
+  main h2,
+  main p {
+    text-align: center;
+    background-color: #070807;
+    color: whitesmoke;
+    margin-bottom: 0 !important;
+    padding: 1rem;
+  }
+
   .card-section {
-    background-color: #1F1F23;
+    background-color: #070708;
     border: 1px solid #424246;
     border-radius: 1rem;
-    width: 11rem;
-    height: 11rem;
+    width: 8rem;
+    height: 8rem;
     padding: 1.2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .card-section img {
     width: 60;
     height: 60;
     object-fit: contain;
     filter: brightness(0) invert(1);
   }
+
   .card-section h3 {
     margin-top: 0.7rem;
     font-size: 1rem;
@@ -475,14 +699,15 @@ object {
     font-weight: 600;
     text-align: center;
   }
+
   .card-section .boton {
     background-color: rgb(62, 11, 202);
   }
+
   .card-section:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
   }
-}
 
 /* Clase para usar dinámicamente con JS */
 .img-ajustada {
@@ -501,25 +726,23 @@ object {
     background-color: #fffff8;
 }
 
-/* Estilo para que las tarjetas parezcan cliqueables */
-.card-candidato:hover {
-    transform: translateY(-5px);
-    transition: transform 0.3s ease;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
-}
-/* 1. Contenedor de la tarjeta: Asegura un ancho base */
+/* Contenedor de la tarjeta */
 .card-candidato {
-    width: 250px;            /* Ancho fijo para que todas las tarjetas tengan el mismo tamaño */
+    width: 100%;             /* Ocupa el ancho de la columna de Bootstrap */
+    max-width: 300px;        /* Evita que en pantallas grandes se vea gigante */
     margin: 0 auto;
+    border: none;
+    transition: transform 0.2s;
 }
 
-/* 2. La Imagen: Aquí está la magia */
+/* La Imagen */
 .card-img-top {
-    width: 100%;      /* La imagen ocupará todo el ancho de la tarjeta */
-    height: 200px;    /* DEFINE UNA ALTURA FIJA (Ajusta según tu diseño) */
-    object-fit: contain; /* 'contain' muestra TODA la imagen, con espacios si es necesario */
-    background-color: #f8f9fa; /* Un gris muy claro si 'contain' deja huecos */
-    object-position: center;
+    width: 100%;
+    height: 280px;           /* Altura fija para que todas las cards midan lo mismo */
+    object-fit: cover;       /* CRUCIAL: Mantiene la proporción sin estirar */
+    object-position: center top; /* Enfoca la parte superior (la cara) */
+    border-radius: 8px;
+    background-color: #222;  /* Fondo oscuro por si la imagen tarda en cargar */
 }
 
 .btn-votar {
@@ -529,4 +752,80 @@ object {
     width: 100%;              /* Asegura que ocupe el ancho disponible */
     overflow: hidden;         /* Por seguridad, oculta desbordamientos */
     text-overflow: ellipsis;  /* Si el nombre fuera muy largo, pone puntos suspensivos */
+}
+
+.result-item {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.header-cyber {
+    background: #050505; /* Fondo casi negro para que resalte el neón */
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid #98fe13;
+    box-shadow: 0px 10px 30px rgba(105, 254, 19, 0.205);
+}
+
+/* Estilo del Texto Neón */
+.neon-text {
+    color: #fff;
+    font-family: 'Orbitron', sans-serif; /* Fuente recomendada para este estilo */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* El texto "¡SE PROTAGONISTA!", se muestra parpadeante y en tonos cyan Neón*/
+.highlight {
+    color: #00f2ff; /* Cian Neón */
+    text-shadow: 0 0 5px #00f2ff, 
+                 0 0 15px #00f2ff, 
+                 0 0 30px #00f2ff;
+    animation: flicker 2s infinite alternate;.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #444;
+}
+}
+
+/* Imagen con efecto de marco tecnológico */
+.megafono-neon {
+    width: 312px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #13fe1f;
+    padding: 5px;
+    box-shadow: 0 0 10px #2efe13;
+}
+
+/* Animación de parpadeo (Flicker) */
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: 0 0 5px #00f2ff, 0 0 15px #00f2ff, 0 0 30px #00f2ff;
+    }
+    20%, 24%, 55% {       
+        text-shadow: none;
+        color: #004a4d;
+    }
+  }
+
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #444;
 }
