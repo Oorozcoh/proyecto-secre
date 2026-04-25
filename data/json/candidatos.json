@@ -1,170 +1,254 @@
 [
   {
-    "id": "1036454308",
-    "votos": 0
-  },
-  {
-    "id": "1034996487",
-    "votos": 0
-  },
-  {
-    "id": "1034993293",
-    "votos": 0
-  },
-  {
-    "id": "1034993739",
-    "votos": 0
-  },
-  {
-    "id": "1017941603",
-    "votos": 0
-  },
-  {
-    "id": "1023555376",
-    "votos": 0
-  },
-  {
-    "id": "1036264129",
-    "votos": 0
-  },
-  {
-    "id": "1035016430",
-    "votos": 0
-  },
-  {
-    "id": "1239488963",
-    "votos": 0
-  },
-  {
-    "id": "1017942314",
-    "votos": 0
-  },
-  {
-    "id": "1013368155",
-    "votos": 0
-  },
-  {
-    "id": "1035014394",
-    "votos": 0
-  },
-  {
-    "id": "1023549651",
-    "votos": 0
-  },
-  {
-    "id": "1035014201",
-    "votos": 0
-  },
-  {
-    "id": "1239489149",
-    "votos": 0
-  },
-  {
-    "id": "1023546859",
-    "votos": 0
-  },
-  {
-    "id": "1038874592",
-    "votos": 0
-  },
-  {
-    "id": "1035010391",
-    "votos": 0
-  },
-  {
-    "id": "1013466421",
-    "votos": 0
-  },
-  {
-    "id": "1020324802",
-    "votos": 0
-  },
-  {
-    "id": "1013466001",
-    "votos": 0
-  },
-  {
-    "id": "1035008428",
-    "votos": 0
-  },
-  {
-    "id": "1039473061",
-    "votos": 0
-  },
-  {
-    "id": "1035010473",
-    "votos": 0
-  },
-  {
-    "id": "1035010314",
-    "votos": 0
-  },
-  {
-    "id": "1020324497",
-    "votos": 0
-  },
-  {
-    "id": "1020323234",
-    "votos": 0
-  },
-  {
-    "id": "1220222196",
-    "votos": 0
-  },
-  {
-    "id": "1039471427",
-    "votos": 0
-  },
-  {
-    "id": "1020233347",
-    "votos": 0
-  },
-  {
-    "id": "1035007046",
-    "votos": 0
-  },
-  {
-    "id": "1036457456",
-    "votos": 0
-  },
-  {
-    "id": "1027742328",
-    "votos": 0
-  },
-  {
-    "id": "1013465162",
-    "votos": 0
-  },
-  {
-    "id": "1036456741",
-    "votos": 0
-  },
-  {
-    "id": "1155714088",
-    "votos": 0
-  },
-  {
-    "id": "1034999053",
-    "votos": 0
-  },
-  {
-    "id": "1033190749",
-    "votos": 0
-  },
-  {
-    "id": "1013464579",
-    "votos": 0
-  },
-  {
-    "id": "1034997441",
-    "votos": 0
-  },
-  {
     "id": "1022008006",
+    "nombre": "BAUTISTA CUELLAR WILCHES",
+    "ciclo": "Inf",
     "votos": 0
   },
   {
     "id": "1239489895",
+    "nombre": "VICTORIA LOPEZ MELO",
+    "ciclo": "Inf",
+    "votos": 0
+  },
+  {
+    "id": "1023555376",
+    "nombre": "VALENTINA GUZMAN ORTIZ",
+    "ciclo": "1.1",
+    "votos": 0
+  },
+  {
+    "id": "1017941603",
+    "nombre": "GABRIELA VELASCO GONZALEZ",
+    "ciclo": "1.1",
+    "votos": 0
+  },
+  {
+    "id": "1239488963",
+    "nombre": "VICTORIA BERMUDEZ SUCERQUIA",
+    "ciclo": "1.1",
+    "votos": 0
+  },
+  {
+    "id": "1036264129",
+    "nombre": "JUAN FERNANDO FRANCO MARIN",
+    "ciclo": "1.1",
+    "votos": 0
+  },
+  {
+    "id": "1017942314",
+    "nombre": "GAEL PALACIO GONZALEZ",
+    "ciclo": "1.1",
+    "votos": 0
+  },
+  {
+    "id": "1035016430",
+    "nombre": "DAVID BETANCUR MONSALVE",
+    "ciclo": "1.1",
+    "votos": 0
+  },
+  {
+    "id": "1013368155",
+    "nombre": "JUAN MARTIN URIBE SIERRA",
+    "ciclo": "1.2",
+    "votos": 0
+  },
+  {
+    "id": "1035014394",
+    "nombre": "SOFIA AGUDELO CORREA",
+    "ciclo": "1.2",
+    "votos": 0
+  },
+  {
+    "id": "1023549651",
+    "nombre": "EMMA GIRALDO LOPEZ",
+    "ciclo": "1.2",
+    "votos": 0
+  },
+  {
+    "id": "1035014201",
+    "nombre": "EMILIA PALACIO GALLEGO",
+    "ciclo": "1.2",
+    "votos": 0
+  },
+  {
+    "id": "1239489149",
+    "nombre": "LETICIA SANCHEZ VELASQUEZ",
+    "ciclo": "1.2",
+    "votos": 0
+  },
+  {
+    "id": "1023546859",
+    "nombre": "JUAN MARTIN VELEZ TORRES",
+    "ciclo": "1.2",
+    "votos": 0
+  },
+  {
+    "id": "1020324802",
+    "nombre": "EMILIO DUQUE SUAREZ",
+    "ciclo": "2.1",
+    "votos": 0
+  },
+  {
+    "id": "1013466421",
+    "nombre": "ELENA VELASQUEZ VELASQUEZ",
+    "ciclo": "2.1",
+    "votos": 0
+  },
+  {
+    "id": "1038874592",
+    "nombre": "FATIMA ACOSTA GARCIA",
+    "ciclo": "2.1",
+    "votos": 0
+  },
+  {
+    "id": "1035010391",
+    "nombre": "JACOBO JARAMILLO GOMEZ",
+    "ciclo": "2.1",
+    "votos": 0
+  },
+  {
+    "id": "1035008428",
+    "nombre": "SOFIA CRUZ SOLANO",
+    "ciclo": "2.2",
+    "votos": 0
+  },
+  {
+    "id": "1039473061",
+    "nombre": "NICOLLE ROBLEDO ARANGO",
+    "ciclo": "2.2",
+    "votos": 0
+  },
+  {
+    "id": "1013466001",
+    "nombre": "MARIA CELESTE BERMUDEZ ALVAREZ",
+    "ciclo": "2.2",
+    "votos": 0
+  },
+  {
+    "id": "1035010314",
+    "nombre": "VALENTINA MESA GIRALDO",
+    "ciclo": "2.3",
+    "votos": 0
+  },
+  {
+    "id": "1220222196",
+    "nombre": "JOAQUIN ROJAS AMARILES",
+    "ciclo": "2.3",
+    "votos": 0
+  },
+  {
+    "id": "1020323234",
+    "nombre": "VALERIA RESTREPO VASQUEZ",
+    "ciclo": "2.3",
+    "votos": 0
+  },
+  {
+    "id": "1020324497",
+    "nombre": "ISAAC URREA GARCIA",
+    "ciclo": "2.3",
+    "votos": 0
+  },
+  {
+    "id": "1035010473",
+    "nombre": "JULIAN BETANCUR MONSALVE",
+    "ciclo": "2.3",
+    "votos": 0
+  },
+  {
+    "id": "1020233347",
+    "nombre": "VICENTE SANCHEZ VELASQUEZ",
+    "ciclo": "2.4",
+    "votos": 0
+  },
+  {
+    "id": "1039471427",
+    "nombre": "VALERIA LOPEZ MELO",
+    "ciclo": "2.4",
+    "votos": 0
+  },
+  {
+    "id": "1035007046",
+    "nombre": "LUCIANA BETANCOURT PARRA",
+    "ciclo": "3.1",
+    "votos": 0
+  },
+  {
+    "id": "1036457456",
+    "nombre": "ISAAC QUINCHIA MEJIA",
+    "ciclo": "3.1",
+    "votos": 0
+  },
+  {
+    "id": "1155714088",
+    "nombre": "MAXIMILIANO HENAO RODRIGUEZ",
+    "ciclo": "3.2",
+    "votos": 0
+  },
+  {
+    "id": "1036456741",
+    "nombre": "EMMA HOYOS SANCHEZ",
+    "ciclo": "3.2",
+    "votos": 0
+  },
+  {
+    "id": "1027742328",
+    "nombre": "SAMUEL WEINSTEIN POSADA",
+    "ciclo": "3.2",
+    "votos": 0
+  },
+  {
+    "id": "1013465162",
+    "nombre": "EMILIANO VELEZ SANCHEZ",
+    "ciclo": "3.2",
+    "votos": 0
+  },
+  {
+    "id": "1034999053",
+    "nombre": "SAMUEL GOMEZ OSORIO",
+    "ciclo": "4.1",
+    "votos": 0
+  },
+  {
+    "id": "1013464579",
+    "nombre": "MILAGROS SALAZAR CORDOBA",
+    "ciclo": "4.1",
+    "votos": 0
+  },
+  {
+    "id": "1033190749",
+    "nombre": "NICOLAS PLATA RODRIGUEZ",
+    "ciclo": "4.1",
+    "votos": 0
+  },
+  {
+    "id": "1034997441",
+    "nombre": "JERONIMO TRUJILLO SEGURA",
+    "ciclo": "4.2",
+    "votos": 0
+  },
+  {
+    "id": "1036454308",
+    "nombre": "SAMANTHA HOYOS SANCHEZ",
+    "ciclo": "5",
+    "votos": 0
+  },
+  {
+    "id": "1034996487",
+    "nombre": "MATIAS NOREÑA MUÑOZ",
+    "ciclo": "5",
+    "votos": 0
+  },
+  {
+    "id": "1034993293",
+    "nombre": "ISABELA GOMEZ OSORIO",
+    "ciclo": "6",
+    "votos": 0
+  },
+  {
+    "id": "1034993739",
+    "nombre": "SALOME ZAPATA RODRIGUEZ",
+    "ciclo": "6",
     "votos": 0
   }
 ]
