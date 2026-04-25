@@ -80,7 +80,7 @@ function mostrarCandidatosPorCiclo(votanteActivo) {
 
     // Ciclo para buscar elcandidato en el array de 'votantes' usando el ID
     const candidatosPermitidos = candidatos.filter(cand => {
-        const infoComoVotante = votantes.find(v => String(v.id).trim() === String(cand.id).trim());
+        const infoComoVotante = votantes.find(v => String(v.id).trim() === Stridng(cand.id).trim());
         return infoComoVotante && String(infoComoVotante.ciclo) === String(votanteActivo.ciclo);
     });
 
