@@ -2,6 +2,7 @@
  * SECRE - Sistema Electoral Colegio Reggio Emilia
  * Entrega Final - Proyecto Integrador Coderhouse JavaScript
  * Desarrollado por: Oscar Orozco
+ * copyright oorozcoh - 2026
  */
 
 let candidatos = [];
