@@ -55,3 +55,62 @@ El jurado tiene la opción de reiniciar el simulador, lo cual limpia el `localSt
 │   ├── candidatos.html # Interfaz principal de votación
 │   └── reglamento.html # Marco legal del proceso
 └── index.html          # Portal de inicio y noticias
+
+### Estos son algunos números de documentos para hacer las pruebas, los documentos a continuación tambien son candidatos, sin embargo, las cédulas matriculadas para votar se pueden ver en el archivo votantes.json
+
+1022008006	Ciclo Inf
+1023555376	Ciclo 1.1
+1013368155	Ciclo 1.2
+1020324802	Ciclo 2.1
+1035008428	Ciclo 2.2
+1035010314	Ciclo 2.3
+1020233347	Ciclo 2.4
+1035007046	Ciclo 3.1
+1155714088	Ciclo 3.2
+1034999053	Ciclo 4.1
+1034997441	Ciclo 4.2
+1036454308	Ciclo 5
+1034993293	Ciclo 6
+
+Los siguientes documentos están habilitados para votar.
+
+DOCUMENTO   CICLO
+1035017001	INF
+1023560034	INF
+1239489895	INF
+1021810084	1.1
+1035015535	1.1
+1239488963	1.1
+89733118	1.2
+1035014394	1.2
+1023549651	1.2
+1038874592	2.1
+1036458946	2.1
+1035011947	2.1
+1027814510	2.2
+1038874590	2.2
+1033202232	2.2
+1035008930	2.3
+1035010473	2.3
+1040577569	2.3
+1039469155	2.4
+1039470673	2.4
+1035007434	2.4
+1038266248	3.1
+1195214331	3.1
+1020320102	3.1
+1035004798	3.2
+1027742328	3.2
+1046724190	3.2
+1020314611	4.1
+1035000831	4.1
+1031942558	4.1
+1027810862	4.2
+1034996418	4.2
+1014877618	4.2
+1027741714	5
+1017934463	5
+1020306383	5
+1017932796	6
+1025894572	6
+1034995243	6
